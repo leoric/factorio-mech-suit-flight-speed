@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 01. 31. 2026
+  Features:
+    - Mech suit flight speed set to match walking speed.
