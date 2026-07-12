@@ -1,6 +1,6 @@
 {
     "name": "mech-suit-flight-speed",
-    "version": "0.0.1",
+    "version": "0.0.6",
     "title": "Mech Suit Flight Speed",
     "author": "ascheel",
     "contact": "ascheel@gmail.com",
@@ -10,7 +10,7 @@
     "source": "https://github.com/ascheel/factorio-mech-suit-flight-speed",
     "issues": "https://github.com/ascheel/factorio-mech-suit-flight-speed/issues",
     "description": "This mod increases the flight speed of mech suits to match the walking speed.",
-    "factorio_version": "2",
+    "factorio_version": "2.1",
     "dependencies": [
         "base"
     ]

@@ -1,4 +1,38 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 2026-07-12
+  Changes:
+    - Flight speed now mirrors hypothetical walking speed on the current tile symmetrically:
+      bonus tiles (concrete) speed you up, penalty tiles (oil ocean) slow you down. Previously
+      penalties were cancelled out instead of applied, which didn't match "fly at the speed you'd
+      walk here."
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 2026-07-12
+  Bugfixes:
+    - Replaced the runtime speed override. `character.character_flying_speed_modifier` and
+      `character.flying_speed_modifier` do not exist anywhere in the Factorio API, so the previous
+      write silently failed (or errored out and got the event handler disabled) and flight speed
+      was never actually being adjusted. Reimplemented using `character.character_running_speed_modifier`
+      together with `character.is_flying`, which are real, documented fields.
+  Changes:
+    - Updated to Factorio 2.1.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 01. 31. 2026
+  Bugfixes:
+    - Flight speed now recognizes terrain improvements such as concrete.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 01. 31. 2026
+  Bugfixes:
+    - More LUA scripting flubs.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 01. 31. 2026
+  Bugfixes:
+    - Fixed old LUA controls to use modern ones.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 01. 31. 2026
   Features:
